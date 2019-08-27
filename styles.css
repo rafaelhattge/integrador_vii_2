@@ -1,3 +1,4 @@
+/*Estilos Globais*/
 html {
     font-family: 'Roboto', sans-serif;
     color: #333;
@@ -13,17 +14,13 @@ h1, h2{
     margin-top: 0;
 }
 
-.center {
-    display: block;
-    margin: 50px auto;
-    width: 50%;
-}
 
+/*Estilizar Barra Lateral*/
 .sidenav {
   list-style-type: none;
   margin: 16px 0px 16px 8px;
-  padding: 0;
-  width: 240px;
+  padding: 0 0 0 0;
+  max-width: 260px;
   color: white;
   background-color: tomato;
   height: 95%;
@@ -34,7 +31,7 @@ h1, h2{
 
 .sidenav a {
     display: block;
-    padding: 8px 8px 8px 16px;
+    padding: 8px 16px 8px 16px;
     font-size: 1.3em;
     color: white;
     text-decoration: none;
@@ -53,10 +50,94 @@ h1, h2{
     color: tomato;
 }
 
+
+/*Estilizar Conteúdo Principal*/
 .main {
     padding-top: 16px;
-    padding-left: 260px;
+    padding-left: 226px;
     display: block;
+}
+
+/*Estilizar Tabelas*/
+table {
+    text-align: left;
+    font-size: 0.8rem;
+    table-layout: fixed;
+    width: 100%;
+    border-spacing: 0;
+    border-colapse: colapse;
+}
+
+th {
+    color: white;
+    font-weight: 100;
+    background-color: tomato;
+}
+
+th:nth-child(1) {
+    width: 15%;
+    text-align: center;
+}
+
+th:nth-child(2) {
+    width: 30%;
+}
+
+th:nth-child(3) {
+    width: 40%;
+}
+
+th:nth-child(4) {
+    width: 15%;
+    text-align: center;
+}
+
+td:nth-child(1) {
+    text-align: center;
+}
+
+td:nth-child(4) {
+    text-align: center;
+}
+
+th, td {
+    padding: 4px;
+}
+
+tr:nth-child(even) {
+    background-color: #EEE;
+}
+
+.center {
+    display: block;
+    margin: 50px auto;
+    width: 50%;
+}
+
+/*Estilizar Cartões*/
+.cartao {
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    border: 2px solid #EEE;
+    box-shadow: 2px 2px 2px #EEE;
+}
+
+.cartao:hover {
+    border-color: tomato;
+    box-shadow: 2px 2px 2px tomato;
+}
+
+.cartao-projeto {
+    max-width: 30%;
+    height: 200px;
+    margin-bottom: 20px;
+    
+}
+
+.cartao-projeto a{
+    position: absolute;
 }
 
 .row {
@@ -68,60 +149,13 @@ h1, h2{
     margin-bottom: 20px;
 }
 
-.cartao {
-    border-radius: 5px;
-    border: 2px solid #EEE;
-    box-shadow: 2px 2px 2px #EEE;
-}
-
-.cartao:hover {
-    border-color: tomato;
-    box-shadow: 2px 2px 2px tomato;
-}
-
-.cartao-projeto {
-    padding: 20px;
-    display: block;
-    max-width: 30%;
-    height: 200px;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.cartao-projeto a{
-    position: absolute;
-}
-
 .cartao-requisitos {
-    padding: 20px;
-    display: block;
     height: 316px;
-    
-    border-radius: 5px;
-    border: 2px solid #EEE;
-    box-shadow: 2px 2px 2px #EEE;
     position: relative;
+    overflow: auto;
 }
 
-.button {
-    min-width: 80px;
-    font-size: 0.9em;
-    text-decoration: none;
-    color: tomato;
-    background-color: #FFF;
-    border: 1px solid tomato;
-    border-radius: 6px;
-    margin: 16px;
-    padding: 5px;
-    right: 0;
-    bottom: 0;
-}
-
-.button:hover {
-    color: #FFF;
-    background: tomato;
-}
-
+/*Estilizar Login*/
 #login-title {
     margin-top: 20px;
     text-align: center;
@@ -148,34 +182,7 @@ h1, h2{
     margin-right: 20px;
 }
 
-/*Formatar formulários*/
-
-/*
-.form-cadastrar-usuario { 
-    display: table;      
-}
-
-.form-cadastrar-usuario p {
-    display: table-row;
-}
-
-.form-cadastrar-usuario label {
-    display: table-cell;
-    text-align: right;
-}
-
-.form-cadastrar-usuario input {
-    display: table-cell;
-}
-
-
-.textarea-label {
-    vertical-align: top;
-    horizontal-align: right;
-}
-
-*/
-
+/*Estilizar formulários*/
 #login-form {
     padding: 16px;
     border-radius: 5px;
@@ -205,4 +212,24 @@ label {
 
 .radio-align {
     padding-top: 6px;
+}
+
+/*Estilizar Botões*/
+.button {
+    min-width: 80px;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: tomato;
+    background-color: #FFF;
+    border: 1px solid tomato;
+    border-radius: 6px;
+    margin: 16px;
+    padding: 5px;
+    right: 0;
+    bottom: 0;
+}
+
+.button:hover {
+    color: #FFF;
+    background: tomato;
 }
