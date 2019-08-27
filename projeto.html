@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html class="no-focus-outline">
+
+<head>
+    <title>Gerenciamento de Projetos</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="cadastrarRequisito.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <div>
+        <ul class="sidenav">
+            <li><a href="principal.html">Início</a></li>
+            <li><a class="ativa" href="projeto.html" >Projeto</a></li>
+            <li><a href="cadastrarProjeto.html">Cadastrar Projeto</a></li>
+            <li><a href="cadastrarUsuario.html">Cadastrar Usuário</a></li>
+            <li><a href="index.html">Sair</a></li>
+        </ul>
+    </div>
+    <!--FIM DA NAVBAR-->
+
+    <div class="main">
+        <div>
+            <h1>Projeto 1</h1>
+            <p>Descrição do Projeto</p>
+        </div>
+
+
+        <div class="row">
+
+            <div class="cartao-requisitos col">
+                <h2>Requisitos Funcionais</h2>
+            </div>
+
+            <div class="cartao-requisitos col">
+                <h2>Requisitos Não Funcionais</h2>
+            </div>
+        </div>
+
+        <div>
+            <button class="button" id="botao-cadastrar" onclick="mostrarFormulario();" >+Novo Requisito</button>
+            <div id="cadastrar-requisito" style="display:none;">
+                <form action="sucesso.html" method="get" name="cadastrar-projeto">
+                    <div>
+                        <label class="textarea-label" for="descricao-requisito">Descrição do Requisito: </label>
+                        <textarea rows="4" cols="70"></textarea>
+
+                    </div>
+
+                    <div class="radio-align">
+                        <label for="tipo-requisito">Tipo de Requisito: </label>
+                        <input type="radio" name="tipo-requisito" value="funcional" checked>Funcional
+                        <input type="radio" name="tipo-requisito" value="nao-funcional">Não Funcional
+                        <br>
+                    </div>
+
+                    <div class="radio-align">
+                        <label for="prioridade-requisito">Prioridade: </label>
+                        <input type="radio" name="prioridade-requisito" value="alta">Alta
+                        <input type="radio" name="prioridade-requisito" value="media" checked>Média
+                        <input type="radio" name="prioridade-requisito" value="baixa">Baixa
+                        <br>
+                    </div>
+
+                    <div class="radio-align">
+                        <label for="complexidade-requisito">Complexidade: </label>
+                        <input type="radio" name="complexidade-requisito" value="alta">Alta
+                        <input type="radio" name="complexidade-requisito" value="media" checked>Média
+                        <input type="radio" name="complexidade-requisito" value="baixa">Baixa
+                        <br>
+                    </div>
+
+                    <div>
+                        <input class="button" name="cancelar" type="button" value="Cancelar"
+                            onclick="esconderFormulario();">
+                        <input class="button" name="limpar" type="reset" value="Limpar">
+                        <input class="button" name="salvar" type="submit" value="Salvar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

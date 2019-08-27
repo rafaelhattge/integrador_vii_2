@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>Cadastrar Usuario</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <div>
+        <ul class="sidenav">
+            <li><a href="principal.html">Início</a></li>
+            <li><a href="cadastrarProjeto.html">Cadastrar Projeto</a></li>
+            <li><a class="ativa" href="cadastrarUsuario.html">Cadastrar Usuário</a></li>
+            <li><a href="index.html">Sair</a></li>
+        </ul>
+    </div>
+    <!--FIM DA NAVBAR-->
+
+    <div class="main">
+        <h1>Cadastrar Usuário</h1>
+        <form action="sucesso.html" method="get" name="cadastrar-usuario">
+            <div>
+                <label for="nome-completo">Nome Completo:</label>
+                <span><input type="text" name="nome-completo"></span>
+            </div>
+
+            <div>
+                <label for="email-usuario">Email:</label>
+                <input type="email" name="email-usuario">
+            </div>
+
+            <div>
+                <label for="nome-usuario">Username:</label>
+                <input type="text" name="nome-usuario">
+            </div>
+
+            <div>
+                <label for="senha-usuario">Senha:</label>
+                <input type="password" name="senha-usuario">
+            </div>
+
+            <div>
+                <label for="repete-senha">Repita a Senha:</label>
+                <input type="password" name="senha-repete">
+            </div>
+
+            <div>
+                <label for="tipo-usuario">Tipo de Usuario: </label>
+                <div class="radio-align">
+                    <input type="radio" name="tipo-usuario" value="usuario-comum" checked>Usuário Comum
+                    <input type="radio" name="tipo-usuario" value="usuario-admin">Administrador
+                </div>
+            </div>
+
+            <div>
+                <label></label>
+                <input class="button" type="reset" value="Limpar">
+                <input class="button" name="salvar" type="submit" value="Salvar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>Gerenciamento de Projetos</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <div>
+        <ul class="sidenav">
+            <li><a href="principal.html">Início</a></li>
+            <li><a class="ativa" href="cadastrarProjeto.html">Cadastrar Projeto</a></li>
+            <li><a href="cadastrarUsuario.html">Cadastrar Usuário</a></li>
+            <li><a href="index.html">Sair</a></li>
+        </ul>
+    </div>
+    <!--FIM DA NAVBAR-->
+
+    <div class="main">
+        <h1>Cadastrar Projeto</h1>
+
+        <form action="sucesso.html" method="get" name="cadastrar-projeto">
+            <div>
+                <label for="nome-projeto">Título do Projeto:</label>
+                <input type="text" name="nome-projeto">
+            </div>
+
+            <div>
+                <label for="descricao-projeto">Descrição do Projeto:</label>
+                <textarea rows="10" cols="50"></textarea>
+            </div>
+
+            <div>
+                <label></label>
+                <input class="button" type="reset" value="Limpar">
+                <input class="button" name="salvar" type="submit" value="Salvar">
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
