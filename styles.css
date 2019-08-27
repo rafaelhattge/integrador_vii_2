@@ -42,10 +42,15 @@ h1, h2{
 
 .sidenav a:hover {
     background-color: crimson;
+    color: tomato;
 }
 
 .sidenav .ativa {
     background-color: crimson;
+}
+
+.sidenav .ativa:hover {
+    color: tomato;
 }
 
 .main {
@@ -63,40 +68,28 @@ h1, h2{
     margin-bottom: 20px;
 }
 
+.cartao {
+    border-radius: 5px;
+    border: 2px solid #EEE;
+    box-shadow: 2px 2px 2px #EEE;
+}
+
+.cartao:hover {
+    border-color: tomato;
+    box-shadow: 2px 2px 2px tomato;
+}
+
 .cartao-projeto {
     padding: 20px;
     display: block;
     max-width: 30%;
     height: 200px;
     margin-bottom: 20px;
-    border-radius: 5px;
-    border: 2px solid #EEE;
-    box-shadow: 2px 2px 2px #EEE;
     position: relative;
 }
 
-.cartao-projeto:hover {
-    border-color: tomato;
-    box-shadow: 2px 2px 2px tomato;
-}
-
 .cartao-projeto a{
-
-    font-size: 0.9em;
-    text-decoration: none;
-    color: tomato;
-    border: 1px solid tomato;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 5px;
-    right: 0;
-    bottom: 0;
     position: absolute;
-}
-
-.cartao-projeto a:hover {
-    color: white;
-    background-color: tomato;
 }
 
 .cartao-requisitos {
@@ -151,11 +144,8 @@ h1, h2{
 }
 
 #cadastrar-requisito {
-    padding: 20px;
+    padding: 16px 16px 0 16px;
     margin-right: 20px;
-    border-radius: 5px;
-    border: 2px solid #EEE;
-    box-shadow: 2px 2px 2px #EEE;
 }
 
 /*Formatar formulários*/

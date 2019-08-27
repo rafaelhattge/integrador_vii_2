@@ -37,21 +37,27 @@ and open the template in the editor.
 
         <div class="row">
 
-            <div class="cartao-requisitos col">
+            <div class="cartao cartao-requisitos col">
                 <h2>Requisitos Funcionais</h2>
             </div>
 
-            <div class="cartao-requisitos col">
+            <div class=" cartao cartao-requisitos col">
                 <h2>Requisitos Não Funcionais</h2>
             </div>
         </div>
 
         <div>
             <button class="button" id="botao-cadastrar" onclick="mostrarFormulario();" >+Novo Requisito</button>
-            <div id="cadastrar-requisito" style="display:none;">
+            <div class="cartao" id="cadastrar-requisito" style="display:none;">
                 <form action="sucesso.html" method="get" name="cadastrar-projeto">
                     <div>
-                        <label class="textarea-label" for="descricao-requisito">Descrição do Requisito: </label>
+                        <label for="titulo-requisito">Requisito: </label>
+                        <input type="text" name="titulo-requisito">
+
+                    </div>
+                    
+                    <div>
+                        <label class="textarea-label" for="descricao-requisito">Descrição: </label>
                         <textarea rows="4" cols="70"></textarea>
 
                     </div>
