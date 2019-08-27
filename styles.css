@@ -183,16 +183,6 @@ tr:nth-child(even) {
 }
 
 /*Estilizar formulários*/
-#login-form {
-    padding: 16px;
-    border-radius: 5px;
-    border: 2px solid #EEE;
-    box-shadow: 2px 2px 2px #EEE;
-    margin: 0 auto; 
-    width:265px;
-    text-align: center;
-}
-
 form input, textarea {
     border-radius: 5px;
     border: 2px solid #EEE;
@@ -212,6 +202,21 @@ label {
 
 .radio-align {
     padding-top: 6px;
+}
+
+#login-form {
+    padding: 16px;
+    border-radius: 5px;
+    border: 2px solid #EEE;
+    box-shadow: 2px 2px 2px #EEE;
+    margin: 0 auto; 
+    width:265px;
+    text-align: center;
+}
+
+#login-form label {
+    float: none;
+    padding-right: 0;
 }
 
 /*Estilizar Botões*/
