@@ -1,0 +1,2 @@
+Insert into usuario values(default, 'admin', 'admin@universo.univates.br', 'admin', 'admin','A');
+Insert into usuario values(default, 'usuario', 'usuario@universo.univates.br', 'usuario', 'usuario','U');

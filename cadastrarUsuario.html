@@ -32,31 +32,31 @@ and open the template in the editor.
         <form action="sucesso.html" method="get" name="cadastrar-usuario">
             <div>
                 <label for="nome-completo">Nome Completo:</label>
-                <span><input type="text" name="nome-completo"></span>
+                <span><input type="text" name="nome-completo" required></span>
             </div>
 
             <div>
                 <label for="email-usuario">Email:</label>
-                <input type="email" name="email-usuario">
+                <input type="email" name="email-usuario" required>
             </div>
 
             <div>
-                <label for="nome-usuario">Username:</label>
-                <input type="text" name="nome-usuario">
+                <label for="nome-usuario">Usuário:</label>
+                <input type="text" name="nome-usuario" required>
             </div>
 
             <div>
                 <label for="senha-usuario">Senha:</label>
-                <input type="password" name="senha-usuario">
+                <input type="password" name="senha-usuario" required>
             </div>
 
             <div>
                 <label for="repete-senha">Repita a Senha:</label>
-                <input type="password" name="senha-repete">
+                <input type="password" name="senha-repete" required>
             </div>
 
             <div>
-                <label for="tipo-usuario">Tipo de Usuario: </label>
+                <label for="tipo-usuario">Tipo de Usuário: </label>
                 <div class="radio-align">
                     <input type="radio" name="tipo-usuario" value="usuario-comum" checked>Usuário Comum
                     <input type="radio" name="tipo-usuario" value="usuario-admin">Administrador
